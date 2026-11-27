@@ -1,0 +1,422 @@
+# Edit these definitions, then run `just icons` or `just icon redback`.
+version = 1
+output = "../.."                       # mod root; --output overrides this
+check_mod_coverage = true
+
+[template]
+file = "potion-template.aseprite"
+liquid_layer = "Liquid"
+
+# Emblem coordinates are in the 70 x 70 bottle canvas.
+# position = center [x,y]; +x right, +y down. Negative rotation tilts right; positive tilts left.
+# scale = multiplier AFTER fitting into box, retaining the source aspect ratio.
+# flip_x = true mirrors left/right across the head's vertical Y axis, before rotation.
+[emblem]
+box = [30, 29]
+position = [28, 47]
+scale = 1.0
+rotation = -22.0
+flip_x = false
+saturation = 0.85
+brightness = 0.90
+opacity = 1.0
+alpha_gain = 1.0
+
+# Render the same finished bottle inside the 56 x 56 mutation badge.
+# The oversized bottle sits behind the native foreground rim, like status_effect_134.
+[effect]
+size = [50, 50]
+position = [5, 0]
+marker_layer = "Bottle"
+marker_mask = "skill-layers/effect_marker_mask.png"
+edge_patch = "skill-layers/effect_edge_patch.png"
+rim = "skill-layers/effect_rim.png"
+interior_mask = "skill-layers/effect_interior_mask.png"
+
+# Family background PNGs are shared independently of each creature's liquid color.
+
+[families.orcs]
+background = "skill-layers/backgrounds/orcs.png"
+
+[families.goblins]
+background = "skill-layers/backgrounds/goblins.png"
+
+[families.ancient_undead]
+background = "skill-layers/backgrounds/ancient_undead.png"
+
+[families.zombies]
+background = "skill-layers/backgrounds/zombies.png"
+
+[families.ghosts]
+background = "skill-layers/backgrounds/ghosts.png"
+
+[families.canines]
+background = "skill-layers/backgrounds/canines.png"
+
+[families.equines]
+background = "skill-layers/backgrounds/equines.png"
+
+[families.basilisks]
+background = "skill-layers/backgrounds/basilisks.png"
+
+[families.bears]
+background = "skill-layers/backgrounds/bears.png"
+
+[families.alps]
+background = "skill-layers/backgrounds/alps.png"
+
+[families.hexen]
+background = "skill-layers/backgrounds/hexen.png"
+
+[families.schrats]
+background = "skill-layers/backgrounds/schrats.png"
+
+[families.spiders]
+background = "skill-layers/backgrounds/spiders.png"
+
+[families.unholds]
+background = "skill-layers/backgrounds/unholds.png"
+
+[families.ghouls]
+background = "skill-layers/backgrounds/ghouls.png"
+
+[families.wyrms]
+background = "skill-layers/backgrounds/wyrms.png"
+
+[families.necrosavants]
+background = "skill-layers/backgrounds/necrosavants.png"
+
+[families.cultists]
+background = "skill-layers/backgrounds/cultists.png"
+
+# Per-potion overrides. Crop (optional) uses source-image pixels before auto-trim.
+# Also supported: box, saturation, brightness, opacity.
+
+[potions.ancient_gladiator]
+family = "ancient_undead"
+emblem = "emblems/ancient_gladiator.png"
+liquid_color = "#376c81"
+scale = 1.1
+position = [28, 49]
+rotation = -22.0
+flip_x = true
+
+[potions.conqueror]
+family = "ancient_undead"
+emblem = "emblems/conqueror.png"
+liquid_color = "#70345d"
+scale = 1.15
+position = [28, 49]
+rotation = -22.0
+flip_x = true
+
+[potions.mummy_infantry]
+family = "ancient_undead"
+emblem = "emblems/mummy_infantry.png"
+liquid_color = "#773b1b"
+scale = 1.05
+position = [28, 50]
+rotation = -26.0
+flip_x = true
+
+[potions.mummy_noble]
+family = "ancient_undead"
+emblem = "emblems/mummy_noble.png"
+liquid_color = "#356a59"
+scale = 1.05
+position = [28, 50]
+rotation = -26.0
+flip_x = true
+
+[potions.mummy_priest]
+family = "ancient_undead"
+emblem = "emblems/mummy_priest.png"
+liquid_color = "#493a7a"
+scale = 1.15
+position = [26, 47]
+rotation = -30.0
+flip_x = true
+
+[potions.mummy_queen]
+family = "ancient_undead"
+emblem = "emblems/mummy_queen.png"
+liquid_color = "#7e2335"
+scale = 1.2
+position = [26, 49]
+rotation = -30.0
+flip_x = true
+
+[potions.fallen_betrayer]
+family = "zombies"
+emblem = "emblems/fallen_betrayer.png"
+liquid_color = "#5e2c6d"
+scale = 1.15
+position = [28, 49]
+rotation = -22.0
+flip_x = true
+
+[potions.treasure_hunter]
+family = "zombies"
+emblem = "emblems/treasure_hunter.png"
+liquid_color = "#25706d"
+scale = 1.1
+position = [27, 47]
+rotation = -28.0
+flip_x = true
+crop = [0, 0, 70, 63]
+
+[potions.banshee]
+family = "ghosts"
+emblem = "emblems/banshee.png"
+liquid_color = "#315e74"
+scale = 1.0
+position = [28, 47]
+rotation = -22.0
+flip_x = false
+crop = [0, 0, 128, 135]
+brightness = 1.0
+alpha_gain = 4.0
+
+[potions.wicht]
+family = "ghosts"
+emblem = "emblems/wicht.png"
+liquid_color = "#74325e"
+scale = 1.05
+position = [28, 49]
+rotation = -22.0
+flip_x = true
+brightness = 1.0
+alpha_gain = 4.0
+
+[potions.orc_behemoth]
+family = "orcs"
+emblem = "emblems/orc_behemoth.png"
+liquid_color = "#29477c"
+scale = 1.2
+position = [30, 51]
+rotation = -26.0
+flip_x = false
+
+[potions.orc_elite]
+family = "orcs"
+emblem = "emblems/orc_elite.png"
+liquid_color = "#5f2e7a"
+scale = 1.50
+position = [32, 48]
+rotation = -28.0
+flip_x = false
+
+[potions.orc_mad_berserker]
+family = "orcs"
+emblem = "emblems/orc_mad_berserker.png"
+liquid_color = "#802e54"
+scale = 1.25
+position = [30, 49]
+rotation = -22.0
+flip_x = false
+
+[potions.orc_tyrant]
+family = "orcs"
+emblem = "emblems/orc_tyrant.png"
+liquid_color = "#1d7478"
+scale = 1.45
+position = [28, 50]
+rotation = -26.0
+flip_x = false
+
+[potions.goblin_elite]
+family = "goblins"
+emblem = "emblems/goblin_elite.png"
+liquid_color = "#7a3526"
+scale = 1.3
+position = [30, 49]
+rotation = -22.0
+flip_x = false
+
+[potions.goblin_rider]
+family = "goblins"
+emblem = "emblems/goblin_rider.png"
+liquid_color = "#327463"
+scale = 1.35
+position = [30, 49]
+rotation = -22.0
+flip_x = false
+
+[potions.goblin_witchdoctor]
+family = "goblins"
+emblem = "emblems/goblin_witchdoctor.png"
+liquid_color = "#6d7222"
+scale = 1.30
+position = [29, 48]
+rotation = -22.0
+flip_x = false
+
+[potions.white_direwolf]
+family = "canines"
+emblem = "emblems/white_direwolf.png"
+liquid_color = "#456b80"
+scale = 1.2
+position = [29, 49]
+rotation = -26.0
+flip_x = false
+
+[potions.demon_hound]
+family = "canines"
+emblem = "emblems/demon_hound.png"
+liquid_color = "#77491f"
+scale = 1.0
+position = [26, 48]
+rotation = -36.0
+flip_x = false
+crop = [0, 0, 57, 68]
+
+[potions.wardog]
+family = "canines"
+emblem = "emblems/wardog.png"
+liquid_color = "#703259"
+scale = 1.15
+position = [28, 49]
+rotation = -26.0
+flip_x = true
+
+[potions.sighthound]
+family = "canines"
+emblem = "emblems/sighthound.png"
+liquid_color = "#3d6d40"
+scale = 1.15
+position = [28, 49]
+rotation = -26.0
+flip_x = true
+
+[potions.horse]
+family = "equines"
+emblem = "emblems/horse.png"
+liquid_color = "#75432d"
+scale = 1.1
+position = [27, 49]
+rotation = -22.0
+flip_x = true
+brightness = 1.0
+
+[potions.donkey]
+family = "equines"
+emblem = "emblems/donkey.png"
+liquid_color = "#405c76"
+scale = 1.1
+position = [27, 49]
+rotation = -30.0
+flip_x = true
+
+[potions.basilisk_drone]
+family = "basilisks"
+emblem = "emblems/basilisk_drone.png"
+liquid_color = "#763529"
+scale = 1.15
+position = [28, 48]
+rotation = -30.0
+flip_x = false
+crop = [0, 0, 66, 83]
+
+[potions.basilisk_sentry]
+family = "basilisks"
+emblem = "emblems/basilisk_sentry.png"
+liquid_color = "#386d55"
+scale = 1.25
+position = [26, 49]
+rotation = -30.0
+flip_x = false
+crop = [0, 0, 41, 64]
+
+[potions.bear]
+family = "bears"
+emblem = "emblems/bear.png"
+liquid_color = "#80582c"
+scale = 1.1
+position = [28, 49]
+rotation = -26.0
+flip_x = false
+
+[potions.demon_alp]
+family = "alps"
+emblem = "emblems/demon_alp.png"
+liquid_color = "#30567c"
+scale = 1.1
+position = [28, 49]
+rotation = -26.0
+flip_x = false
+
+[potions.hexe_leader]
+family = "hexen"
+emblem = "emblems/hexe_leader.png"
+liquid_color = "#7c3443"
+scale = 1.05
+position = [26, 50]
+rotation = -30.0
+flip_x = false
+
+[potions.greenwood_schrat]
+family = "schrats"
+emblem = "emblems/greenwood_schrat.png"
+liquid_color = "#804329"
+scale = 1.15
+position = [30, 48]
+rotation = -22.0
+flip_x = false
+crop = [7, 35, 88, 114]
+
+[potions.redback]
+family = "spiders"
+emblem = "emblems/redback.png"
+liquid_color = "#7a1e2c"
+scale = 1.05
+position = [27, 49]
+rotation = -22.0
+flip_x = false
+
+[potions.rock_unhold]
+family = "unholds"
+emblem = "emblems/rock_unhold.png"
+liquid_color = "#32617f"
+scale = 1.15
+position = [27, 49]
+rotation = -28.0
+flip_x = false
+crop = [0, 0, 90, 73]
+
+[potions.skin_ghoul]
+family = "ghouls"
+emblem = "emblems/skin_ghoul.png"
+liquid_color = "#4c5679"
+scale = 1.15
+position = [28, 49]
+rotation = -26.0
+flip_x = false
+
+[potions.stollwurm]
+family = "wyrms"
+emblem = "emblems/stollwurm.png"
+liquid_color = "#7a335f"
+scale = 1.2
+position = [28, 49]
+rotation = -26.0
+flip_x = false
+
+[potions.necrosavant_lord]
+family = "necrosavants"
+emblem = "emblems/necrosavant_lord.png"
+liquid_color = "#493778"
+scale = 1.1
+position = [27, 50]
+rotation = -30.0
+flip_x = true
+
+[potions.fault_finder]
+family = "cultists"
+emblem = "emblems/fault_finder.png"
+liquid_color = "#665827"
+scale = 1.10
+position = [30, 48]
+rotation = -30.0
+flip_x = true
+crop = [0, 0, 45, 52]
+

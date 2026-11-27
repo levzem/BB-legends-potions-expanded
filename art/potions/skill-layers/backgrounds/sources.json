@@ -1,0 +1,361 @@
+{
+  "orcs": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_127.png",
+    "method": "Quintic fade aligned with the bottle, rotated 25 degrees clockwise; color at the lower left fades to black at the upper right over 85% of the interior.",
+    "glow_color": "#f0504a",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); t = clamp((depth - fade_top) / (interior_bottom - fade_top), 0, 1); RGB = glow_color * t*t*t*(t*(t*6-15)+10)",
+    "fade_height_fraction": 0.85,
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "fade_top": 10.5,
+    "curve": "smootherstep (quintic)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ]
+  },
+  "goblins": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_125.png",
+    "method": "Quintic fade aligned with the bottle, rotated 25 degrees clockwise; color at the lower left fades to black at the upper right over 85% of the interior.",
+    "glow_color": "#b4c850",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); t = clamp((depth - fade_top) / (interior_bottom - fade_top), 0, 1); RGB = glow_color * t*t*t*(t*(t*6-15)+10)",
+    "fade_height_fraction": 0.85,
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "fade_top": 10.5,
+    "curve": "smootherstep (quintic)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ]
+  },
+  "ancient_undead": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_131.png",
+    "method": "Quintic fade aligned with the bottle, rotated 25 degrees clockwise; color at the lower left fades to black at the upper right over 85% of the interior.",
+    "glow_color": "#505254",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); t = clamp((depth - fade_top) / (interior_bottom - fade_top), 0, 1); RGB = glow_color * t*t*t*(t*(t*6-15)+10)",
+    "fade_height_fraction": 0.85,
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "fade_top": 10.5,
+    "curve": "smootherstep (quintic)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ]
+  },
+  "zombies": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_135.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "ghosts": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_137.png",
+    "method": "Quintic fade aligned with the bottle, rotated 25 degrees clockwise; color at the lower left fades to black at the upper right over 85% of the interior.",
+    "glow_color": "#50a0b9",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); t = clamp((depth - fade_top) / (interior_bottom - fade_top), 0, 1); RGB = glow_color * t*t*t*(t*(t*6-15)+10)",
+    "fade_height_fraction": 0.85,
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "fade_top": 10.5,
+    "curve": "smootherstep (quintic)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ]
+  },
+  "canines": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_139.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "equines": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_139.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "basilisks": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_140.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "bears": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_145.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "alps": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_147.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "hexen": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_148.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "schrats": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_146.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "spiders": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_144.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "unholds": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_145.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "ghouls": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_149.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "wyrms": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_140.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "necrosavants": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_133.png",
+    "method": "Quintic fade aligned with the bottle, rotated 25 degrees clockwise; color at the lower left fades to black at the upper right over 85% of the interior.",
+    "glow_color": "#505254",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); t = clamp((depth - fade_top) / (interior_bottom - fade_top), 0, 1); RGB = glow_color * t*t*t*(t*(t*6-15)+10)",
+    "fade_height_fraction": 0.85,
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "fade_top": 10.5,
+    "curve": "smootherstep (quintic)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ]
+  },
+  "cultists": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_152.png",
+    "method": "Bottle-aligned white gradient, rotated 25 degrees clockwise. White stays bright through the bottom 10%, then fades with quadratic falloff to black at 100% up the axis.",
+    "glow_color": "#d2d2d7",
+    "black_color": "#000000",
+    "formula": "angle = radians(rotation_clockwise); depth = rotation_center[1] - (x + 0.5 - rotation_center[0])*sin(angle) + (y + 0.5 - rotation_center[1])*cos(angle); up = (interior_bottom - depth) / (interior_bottom - interior_top); t = clamp((up - fade_start_fraction) / (fade_end_fraction - fade_start_fraction), 0, 1); RGB = glow_color * (1-t)**fade_power",
+    "interior_top": 3.0,
+    "interior_bottom": 53.0,
+    "curve": "quadratic falloff (gentle approach to black)",
+    "rotation_clockwise": 25.0,
+    "rotation_center": [
+      28,
+      28
+    ],
+    "fade_start_fraction": 0.1,
+    "fade_end_fraction": 1.0,
+    "fade_fraction_origin": "bottom of the badge interior, along the rotated bottle axis",
+    "fade_power": 2.0
+  },
+  "_rim": {
+    "source": "battle-brothers/src/gfx/skills/status_effect_134.png",
+    "asset": "../effect_rim.png",
+    "method": "Native status_effect_134 pixels; alpha multiplied by smoothstep from radius 23.25 to 24.5 around [27.5,27.5]. Outside 24.5 all RGBA pixels are unchanged.",
+    "layer_order": [
+      "family gradient",
+      "oversized potion",
+      "native gold rim"
+    ],
+    "interior_mask": "../effect_interior_mask.png",
+    "interior_method": "255 where status_effect_134 alpha is 255, otherwise 0. Only the rim contributes to the antialiased outer edge."
+  },
+  "_bottle_edge": {
+    "source": "potion-template.aseprite / Bottle layer",
+    "asset": "../effect_edge_patch.png",
+    "mask": "../effect_marker_mask.png",
+    "method": "Restore outline hidden beneath inventory + by interpolating adjacent native row profiles in premultiplied RGBA. Rows 47..63, center x linearly from 59 at row 46 to 45.5 at row 63; offsets floor(center)-2 through ceil(center)+5. Sample profiles at rows 46 and 63 with matching center-relative offsets. Clear patch footprint in marker mask before compositing. Apply before liquid and emblem.",
+    "alignment_reference": "battle-brothers/src/gfx/ui/items/consumables/potion_31.png -> battle-brothers/src/gfx/skills/status_effect_144.png",
+    "effect_size": [
+      50,
+      50
+    ],
+    "effect_position": [
+      5,
+      0
+    ]
+  }
+}

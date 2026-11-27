@@ -1,0 +1,10 @@
+.DS_Store
+/.env
+/dist/
+*.cnut
+*.nut.cnut
+.idea/
+__pycache__/
+/.venv-art/
+/art/potions/generated/
+/tests

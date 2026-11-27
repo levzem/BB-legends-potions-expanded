@@ -1,0 +1,561 @@
+{
+  "ancient_gladiator": {
+    "brush": "bust_skeleton_head",
+    "atlas": "gfx/entity_1.png",
+    "box": [
+      1697,
+      240,
+      1743,
+      302
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\undead\\bust_skeleton_head.png",
+    "trim": [
+      1,
+      1,
+      46,
+      62
+    ]
+  },
+  "banshee": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/bust_banshee_01.png",
+    "trim": [
+      2,
+      2,
+      130,
+      183
+    ]
+  },
+  "basilisk_drone": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/basilisk_drone_head_01.png",
+    "trim": [
+      0,
+      1,
+      66,
+      102
+    ]
+  },
+  "basilisk_sentry": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/basilisk_sentry_head_01.png",
+    "trim": [
+      3,
+      31,
+      44,
+      116
+    ]
+  },
+  "bear": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bear_head_01.png",
+    "brush": "bear_head_01",
+    "entity": "Legends-public/scripts/entity/tactical/enemies/legend_bear.nut",
+    "trim": [
+      5,
+      21,
+      79,
+      100
+    ]
+  },
+  "conqueror": {
+    "composite": [
+      {
+        "brush": "bust_skeleton_head",
+        "atlas": "gfx/entity_1.png",
+        "box": [
+          1697,
+          240,
+          1743,
+          302
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\undead\\bust_skeleton_head.png",
+        "plane": [
+          -17.0,
+          29.0,
+          -14.0,
+          48.0
+        ]
+      },
+      {
+        "brush": "bust_helmet_153",
+        "atlas": "gfx/entity_1.png",
+        "box": [
+          1694,
+          303,
+          1744,
+          345
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\undead\\helmets\\bust_helmet_153.png",
+        "plane": [
+          -20.0,
+          30.0,
+          0.0,
+          42.0
+        ]
+      }
+    ],
+    "alignment": "native brush plane coordinates"
+  },
+  "demon_alp": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_demonalp_head_01.png",
+    "trim": [
+      7,
+      17,
+      86,
+      115
+    ]
+  },
+  "demon_hound": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/bust_demon_hound_01.png",
+    "trim": [
+      2,
+      4,
+      121,
+      100
+    ]
+  },
+  "donkey": {
+    "path": "Legends-public/unpacked/legend_characters/entity/heads/bust_head_donkey_01.png",
+    "trim": [
+      0,
+      0,
+      50,
+      68
+    ]
+  },
+  "fallen_betrayer": {
+    "composite": [
+      {
+        "brush": "bust_head_01",
+        "atlas": "gfx/entity_0.png",
+        "box": [
+          265,
+          2005,
+          315,
+          2073
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\heads\\bust_head_01.png",
+        "plane": [
+          -21.0,
+          29.0,
+          -20.0,
+          48.0
+        ]
+      },
+      {
+        "brush": "zombify_03",
+        "atlas": "gfx/entity_0.png",
+        "box": [
+          278,
+          1063,
+          320,
+          1129
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\heads\\zombify_03.png",
+        "plane": [
+          -14.0,
+          28.0,
+          -21.0,
+          45.0
+        ]
+      }
+    ],
+    "alignment": "native brush plane coordinates"
+  },
+  "fault_finder": {
+    "brush": "bust_helmet_245",
+    "atlas": "gfx/entity_7.png",
+    "box": [
+      1472,
+      903,
+      1518,
+      975
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\flesh_golems\\helmets\\bust_fault_finder_helmet_02.png",
+    "trim": [
+      1,
+      0,
+      46,
+      72
+    ]
+  },
+  "goblin_elite": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/goblins/bust_goblin_04_head_01.png",
+    "trim": [
+      2,
+      6,
+      79,
+      64
+    ]
+  },
+  "goblin_rider": {
+    "brush": "bust_goblin_01_head_01",
+    "atlas": "gfx/entity_2.png",
+    "box": [
+      1123,
+      1026,
+      1205,
+      1090
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\goblins\\bust_goblin_01_head_01.png",
+    "trim": [
+      1,
+      1,
+      82,
+      64
+    ]
+  },
+  "goblin_witchdoctor": {
+    "brush": "bust_goblin_02_head_01",
+    "atlas": "gfx/entity_2.png",
+    "box": [
+      1924,
+      1535,
+      2006,
+      1607
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\goblins\\bust_goblin_02_head_01.png",
+    "trim": [
+      0,
+      0,
+      82,
+      72
+    ]
+  },
+  "greenwood_schrat": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_schrat_green_head_01.png",
+    "trim": [
+      1,
+      0,
+      96,
+      114
+    ]
+  },
+  "hexe_leader": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_hexenleader_head_01.png",
+    "trim": [
+      0,
+      1,
+      56,
+      68
+    ]
+  },
+  "horse": {
+    "path": "Legends-public/unpacked/legend_horses/entity/heads/bust_head_100.png",
+    "trim": [
+      3,
+      0,
+      47,
+      80
+    ]
+  },
+  "mummy_infantry": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/mummy_head_01.png",
+    "trim": [
+      1,
+      0,
+      45,
+      57
+    ]
+  },
+  "mummy_noble": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/mummy_head_02.png",
+    "trim": [
+      0,
+      1,
+      43,
+      57
+    ]
+  },
+  "mummy_priest": {
+    "composite": [
+      {
+        "path": "Legends-public/unpacked/legend_enemies/entity/undead/mummy_head_03.png",
+        "brush": "mummy_head_03",
+        "plane": [
+          -17.0,
+          0,
+          0,
+          48.0
+        ]
+      },
+      {
+        "path": "Legends-public/unpacked/legend_helmets/entity/legend_helmets/cropped/mummy_headress_01.png",
+        "brush": "legendhelms_mummy_headress_01",
+        "plane": [
+          -18.0,
+          0,
+          0,
+          80.0
+        ]
+      }
+    ],
+    "alignment": "native brush plane coordinates"
+  },
+  "mummy_queen": {
+    "composite": [
+      {
+        "path": "Legends-public/unpacked/legend_enemies/entity/undead/mummy_head_04.png",
+        "brush": "mummy_head_04",
+        "plane": [
+          -17.0,
+          0,
+          0,
+          48.0
+        ]
+      },
+      {
+        "path": "Legends-public/unpacked/legend_helmets/entity/legend_helmets/cropped/mummy_crown_01.png",
+        "brush": "legendhelms_mummy_crown_01",
+        "plane": [
+          -15.0,
+          0,
+          0,
+          72.0
+        ]
+      }
+    ],
+    "alignment": "native brush plane coordinates"
+  },
+  "necrosavant_lord": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/bust_vampire_lord_head_01.png",
+    "trim": [
+      2,
+      0,
+      46,
+      70
+    ]
+  },
+  "orc_behemoth": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/orcs/legend_orc_behemoth_head_01.png",
+    "trim": [
+      39,
+      5,
+      117,
+      83
+    ]
+  },
+  "orc_elite": {
+    "brush": "bust_orc_03_head_01",
+    "atlas": "gfx/entity_2.png",
+    "box": [
+      1651,
+      1483,
+      1739,
+      1563
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\orcs\\bust_orc_03_head_01.png",
+    "trim": [
+      0,
+      1,
+      88,
+      80
+    ]
+  },
+  "orc_mad_berserker": {
+    "brush": "bust_orc_02_head_01",
+    "atlas": "gfx/entity_2.png",
+    "box": [
+      1750,
+      1588,
+      1838,
+      1674
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\orcs\\bust_orc_02_head_01.png",
+    "trim": [
+      0,
+      1,
+      88,
+      86
+    ]
+  },
+  "orc_tyrant": {
+    "brush": "bust_orc_04_head_01",
+    "atlas": "gfx/entity_2.png",
+    "box": [
+      1328,
+      1241,
+      1420,
+      1345
+    ],
+    "offset": [
+      0,
+      35
+    ],
+    "frame": "entity\\orcs\\bust_orc_04_head_01.png",
+    "trim": [
+      0,
+      1,
+      92,
+      104
+    ]
+  },
+  "redback": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_spider_redback_head_01.png",
+    "trim": [
+      1,
+      1,
+      44,
+      52
+    ]
+  },
+  "rock_unhold": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_unhold_rock_head_02.png",
+    "trim": [
+      0,
+      0,
+      90,
+      92
+    ]
+  },
+  "sighthound": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_dawg_01_head_01.png",
+    "trim": [
+      0,
+      0,
+      60,
+      48
+    ]
+  },
+  "skin_ghoul": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_ghoulskin_03_head_01.png",
+    "trim": [
+      0,
+      1,
+      112,
+      114
+    ]
+  },
+  "stollwurm": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_stollwurm_head_01.png",
+    "trim": [
+      0,
+      0,
+      69,
+      98
+    ]
+  },
+  "treasure_hunter": {
+    "composite": [
+      {
+        "brush": "zombify_02",
+        "atlas": "gfx/entity_0.png",
+        "box": [
+          676,
+          1397,
+          716,
+          1457
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\heads\\zombify_02.png",
+        "plane": [
+          -11.0,
+          29.0,
+          -19.0,
+          41.0
+        ]
+      },
+      {
+        "brush": "bust_helmet_southern_17",
+        "atlas": "gfx/entity_6.png",
+        "box": [
+          1138,
+          426,
+          1208,
+          502
+        ],
+        "offset": [
+          0,
+          35
+        ],
+        "frame": "entity\\helmets\\southern\\bust_helmet_southern_17.png",
+        "plane": [
+          -30.0,
+          40.0,
+          -23.0,
+          53.0
+        ]
+      }
+    ],
+    "alignment": "native brush plane coordinates"
+  },
+  "wardog": {
+    "brush": "bust_dog_01_head_01",
+    "atlas": "gfx/entity_3.png",
+    "box": [
+      1145,
+      722,
+      1201,
+      766
+    ],
+    "offset": [
+      0,
+      25
+    ],
+    "frame": "entity\\misc\\bust_dog_01_head_01.png",
+    "trim": [
+      0,
+      0,
+      56,
+      44
+    ]
+  },
+  "white_direwolf": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/beasts/bust_direwolf_white_01_head.png",
+    "trim": [
+      0,
+      1,
+      76,
+      86
+    ]
+  },
+  "wicht": {
+    "path": "Legends-public/unpacked/legend_enemies/entity/undead/bust_ghost_head_01.png",
+    "trim": [
+      0,
+      1,
+      50,
+      62
+    ]
+  }
+}
